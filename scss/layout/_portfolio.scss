@@ -73,10 +73,7 @@
         1px 4px 6px rgba(0, 0, 0, 0.16);
     }
 }
-.remove-nav:hover .remove-top-text,
-.remove-nav:focus .remove-top-text {
-    transform: translateY(0%);
-}
+
 .remove-nav-text {
     position: relative;
     overflow: hidden;
@@ -94,7 +91,10 @@
     padding-top: 63px;
     padding-left: 24px;
     padding-right: 24px;
-
+    .remove-nav:hover &,
+    .remove-nav:focus & {
+        transform: translateY(0%);
+    }
 }
 .border {
     border-right: 1px solid #EEEEEE;

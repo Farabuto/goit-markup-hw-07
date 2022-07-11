@@ -130,12 +130,6 @@ input {
     }
 }
 
-.input-form:focus+.form-svg,
-.input-form:hover+.form-svg,
-.input-form:active+.form-svg {
-    fill: var(--accent-color);
-}
-
 .form-svg {
     position: absolute;
     fill: black;
@@ -144,6 +138,11 @@ input {
     transform: translateY(-50%);
     justify-content: center;
     align-items: center;
+    .input-form:focus+&,
+    .input-form:hover+&,
+    .input-form:active+& {
+        fill: var(--accent-color);
+    }
 }
 
 .checkbox {

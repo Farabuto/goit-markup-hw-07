@@ -251,12 +251,6 @@ input {
   border-color: var(--accent-color);
 }
 
-.input-form:focus + .form-svg,
-.input-form:hover + .form-svg,
-.input-form:active + .form-svg {
-  fill: var(--accent-color);
-}
-
 .form-svg {
   position: absolute;
   fill: black;
@@ -265,6 +259,9 @@ input {
   transform: translateY(-50%);
   justify-content: center;
   align-items: center;
+}
+.input-form:focus + .form-svg, .input-form:hover + .form-svg, .input-form:active + .form-svg {
+  fill: var(--accent-color);
 }
 
 .checkbox {
@@ -707,6 +704,9 @@ input {
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.customers-link:hover, .customers-link:focus {
+  border-color: #2196F3;
+}
 
 .customers-icon {
   width: 106px;
@@ -714,14 +714,7 @@ input {
   fill: #AFB1B8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.customers-link:hover,
-.customers-link:focus {
-  border-color: #2196F3;
-}
-
-.customers-link:hover .customers-icon,
-.customers-link:focus .customers-icon {
+.customers-link:hover .customers-icon, .customers-link:focus .customers-icon {
   fill: #2196F3;
 }
 
@@ -925,11 +918,6 @@ address {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.remove-nav:hover .remove-top-text,
-.remove-nav:focus .remove-top-text {
-  transform: translateY(0%);
-}
-
 .remove-nav-text {
   position: relative;
   overflow: hidden;
@@ -952,6 +940,9 @@ address {
   padding-top: 63px;
   padding-left: 24px;
   padding-right: 24px;
+}
+.remove-nav:hover .remove-top-text, .remove-nav:focus .remove-top-text {
+  transform: translateY(0%);
 }
 
 .border {
